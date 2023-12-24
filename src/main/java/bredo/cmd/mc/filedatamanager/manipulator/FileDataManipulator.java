@@ -195,3 +195,4 @@ public final class FileDataManipulator {
         return getIDefaultsData(selectedFileData());
     }
     //</editor-fold>v
+}
