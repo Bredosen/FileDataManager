@@ -6,14 +6,14 @@ group = "bredo.cmd.mc.filedatamanager"
 version = "1.0-SNAPSHOT"
 
 repositories {
-    mavenCentral()
+    maven("https://hub.spigotmc.org/nexus/content/repositories/snapshots/")
+
+    maven("https://oss.sonatype.org/content/repositories/snapshots")
+    maven("https://oss.sonatype.org/content/repositories/central")
+    mavenLocal()
 }
 
 dependencies {
-    testImplementation(platform("org.junit:junit-bom:5.9.1"))
-    testImplementation("org.junit.jupiter:junit-jupiter")
-}
-
-tasks.test {
-    useJUnitPlatform()
+    compileOnly("org.spigotmc:spigot-api:1.20.2-R0.1-SNAPSHOT")
+    compileOnly("org.spigotmc:spigot:1.20.2-R0.1-SNAPSHOT")
 }

@@ -1,0 +1,10 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="FileDataManager:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/FileDataManager_jar</output-path>
+    <root id="archive" name="FileDataManager.jar">
+      <element id="module-output" name="FileDataManager.main" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/../UniLink/out/artifacts/UniLink_jar/UniLink.jar" path-in-jar="/" />
+      <element id="file-copy" path="$PROJECT_DIR$/src/main/resources/plugin.yml" />
+    </root>
+  </artifact>
+</component>
